@@ -50,30 +50,30 @@ table {
 
 
 .navbar.bg-custom{
-    background: rgb(161, 161, 192)!important;
+	background: rgb(161, 161, 192)!important;
 }
 
 .nav-major-font{
-    font-family:Arial, Helvetica, sans-serif;
+	font-family:Arial, Helvetica, sans-serif;
 }
 
 .selfie{
-    width:100%;
+	width:100%;
 }
 
 .nav-link{
-    font-size:16px!important;
+	font-size:16px!important;
 }
 
 .nav-item{
-    color: white!important;
+	color: white!important;
 }
 
 .photo_plantapp{
-    width: 70%;
+	width: 70%;
 }
 
 .photo_liangweb{
-    width: 100%;
+	width: 100%;
 }
 
