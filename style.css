@@ -51,6 +51,7 @@ table {
 
 .navbar.bg-custom{
 	background: rgb(161, 161, 192)!important;
+	background: red!important;
 }
 
 .nav-major-font{
