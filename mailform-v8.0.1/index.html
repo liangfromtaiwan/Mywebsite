@@ -65,16 +65,22 @@
       <dl>
         <dt><i><span class="required">必須</span> </i>郵便番号</dt>
         <dd class="required">
-         
-          <input
+          <div class="controls">
+            <input type="text" name="zip11" size="10" maxlength="8" onkeyup="AjaxZip3.zip2addr(this,'','addr11','addr11');">
+          </div> <div class="controls">
+            <input type="text" name="addr11" style="width:100%">
+          </div>  </dd>
+          <dd>
+          </dd>
+          <!-- <input
             type="text"
             name="postal"
             value=""
             onkeyup="AjaxZip3.zip2addr( this,'','address','address' );"
           />　
           <a href="http://www.post.japanpost.jp/zipcode/" target="_blank"
-            >郵便番号検索</a>
-        </dd>
+            >郵便番号検索</a> -->
+     
       </dl>
 
       <dl>
