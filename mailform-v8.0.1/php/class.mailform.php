@@ -1,5 +1,6 @@
 <?php
 
+
 class Mailform {
 	
 	// private property
