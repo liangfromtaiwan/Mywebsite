@@ -84,6 +84,10 @@ table {
 
 .button{
 	padding: 20px;
-	color: #fff;
 	background: blue;
+}
+
+a{
+	color: #fff;
+
 }
