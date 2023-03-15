@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>レスポンシブメールフォームのサンプル</title>
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- 既存サイトに組み込む場合に不要なCSSここから -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <style>
+      body {
+        color: #454545;
+        font-family: sans-serif;
+        background: #f0f0f0;
+      }
+    </style>
+    <!-- 既存サイトに組み込む場合に不要なCSSここまで -->
+
+    <link rel="stylesheet" href="css/mailform.css" />
+
+    <!-- ご希望の日時選択ライブラリここから -->
+    <link rel="stylesheet" href="css/jquery.datetimepicker.css" />
+    <!-- ご希望の日時選択ライブラリここまで -->
+  </head>
+  <body>
+    <form action="php/mailform.php" method="post" id="mail_form">
+      <dl>
+        <dt><i></i>お名前 <span>例:山田 大郎</span></dt>
+        <dd class="required">
+          <input type="text" name="name_1" value="" />
+        </dd>
+      </dl>
+
+      <dl>
+        <dt><i></i>カナ <span>例:ヤマダ ダイロウ</span></dt>
+        <dd>
+          <input type="text" name="read_1" value="" />
+        </dd>
+      </dl>
+
+      <dl>
+        <dt><i></i>性別</dt>
+        <dd>
+          <ul>
+            <li>
+              <label
+                ><input type="radio" name="gender" value="男性" />男性</label
+              >
+            </li>
+            <li>
+              <label
+                ><input type="radio" name="gender" value="女性" />女性</label
+              >
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt><i></i>生年月日 <span></span></dt>
+        <dd class="required">
+          <input type="text" name="birth" value="" />
+        </dd>
+      </dl>
+      <dl>
+        <dt><i></i>郵便番号</dt>
+        <dd class="required">
+          <input
+            type="text"
+            name="postal"
+            value=""
+            onkeyup="AjaxZip3.zip2addr( this,'','address','address' );"
+          />　<a href="http://www.post.japanpost.jp/zipcode/" target="_blank"
+            >郵便番号検索</a
+          >
+        </dd>
+      </dl>
+
+      <dl>
+        <dt><i></i>住所</dt>
+        <dd><input type="text" name="address" value="" /></dd>
+      </dl>
+      <dl>
+        <dt><i></i>電話番号</dt>
+        <dd><input type="tel" name="phone" value="" /></dd>
+      </dl>
+      <dl>
+        <dt><i></i>メールアドレス</dt>
+        <dd class="required">
+          <input type="email" name="mail_address" value="" />
+        </dd>
+      </dl>
+
+      <dl>
+        <dt><i></i>メールアドレス(確認用)</dt>
+        <dd><input type="email" name="mail_address_confirm" value="" /></dd>
+      </dl>
+
+      <p id="form_submit">
+        <input type="button" id="form_submit_button" value="送信" />
+      </p>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/mailform-js.php"></script>
+
+    <!-- フリガナ自動入力ライブラリここから -->
+    <script src="js/jquery.autoKana.js"></script>
+    <script>
+      (function ($) {
+        $.fn.autoKana('input[name="name_1"]', 'input[name="read_1"]', {
+          katakana: false,
+        });
+        $.fn.autoKana('input[name="name_2"]', 'input[name="read_2"]', {
+          katakana: false,
+        });
+      })(jQuery);
+    </script>
+    <!-- フリガナ自動入力ライブラリここまで -->
+
+    <!-- 住所自動入力ライブラリここから -->
+    <script src="js/ajaxzip3.js"></script>
+    <!-- 住所自動入力ライブラリここまで -->
+
+    <!-- ご希望の日時選択ライブラリここから -->
+    <script src="js/jquery.datetimepicker.js"></script>
+    <script>
+      (function ($) {
+        $('input[name="schedule"]').datetimepicker({
+          lang: "ja",
+        });
+      })(jQuery);
+    </script>
+    <!-- ご希望の日時選択ライブラリここまで -->
+  </body>
+</html>
