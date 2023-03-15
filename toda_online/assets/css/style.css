@@ -1,0 +1,377 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+	 v2.0 | 20110126
+	 License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+body {
+  color: #454545;
+  font-family: sans-serif;
+  background: #f0f0f0;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.wrap{
+  background: #FFF;
+}
+body {
+  font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.wrap {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.img-top-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.img-top-logo img {
+  width: 53%;
+}
+
+.title-recruit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.title-recruit img {
+  width: 66%;
+}
+
+.photo-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.title-recruit-period {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.title-recruit-period img {
+  width: 87%;
+}
+
+.title-charm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 36px;
+}
+
+.title-charm img {
+  width: 79%;
+}
+
+.inexperienced,
+.free,
+.reward,
+.retire {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.photo-inexperienced,
+.photo-free,
+.photo-reward,
+.photo-retire {
+  margin-top: 32px;
+}
+
+.inexperienced p,
+.free p,
+.reward p,
+.retire p {
+  margin-top: 32px;
+  font-size: 16px;
+  line-height: 32px;
+  width: calc(100% - 32px);
+  letter-spacing: 4px;
+}
+
+.hr-line {
+  margin-top: 44px;
+}
+
+.title-recruit-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 44px;
+}
+
+.title-recruit-list img {
+  width: 61%;
+}
+
+.recruit-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.recruit-list p {
+  width: calc(100% - 32px);
+}
+
+.recruit-list .bold {
+  margin-top: 42px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.recruit-list .regular {
+  margin-top: 12px;
+  font-size: 13px;
+  line-height: 26px;
+}
+
+.cta {
+  margin-top: 40px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fffffff2;
+}
+.cta-fixed {
+  position: fixed;
+  bottom: 0;
+  margin-top: 5px;
+ width: 100%;
+  max-width: 640px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fffffff2;
+}
+
+@media(max-width:400px){
+  .cta-fixed {
+   width:100%;
+  }
+}
+
+.btn-cta {
+  padding: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+}
+
+
+.title-recruit-request {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.title-recruit-request img {
+  width: 61%;
+}
+
+.tel {
+  margin: 16px;
+}
+.mail {
+  margin: 16px;
+}
+
+.tel img {
+  margin-top: 10px;
+  width: 15%;
+}
+
+.tel p {
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 5px;
+  width: calc(100% - 32px);
+  margin-top: 20px;
+}
+
+.tel h3 {
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.tel h3 span {
+  font-weight: 400;
+  margin-left: 10px;
+  color: #00549b;
+}
+
+.btn-send {
+  margin-top: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-send img {
+  width: 35%;
+}
+
+.bottom-logo {
+  margin: -20px 0 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom-logo img {
+  width: 30%;
+}
+.contactTitle {
+  margin-top: 24px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #00549b;
+}
