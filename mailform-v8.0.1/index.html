@@ -24,9 +24,9 @@
     <!-- ご希望の日時選択ライブラリここまで -->
   </head>
   <body>
-    <form action="/mailform-v8.0.1/php/mailform.php" method="post" id="mail_form">
+    <form action="/php/mailform.php" method="post" id="mail_form">
       <dl>
-        <dt><i></i>お名前 <span>例:山田 大郎</span></dt>
+        <dt><i> <span class="requied">必須</span> </i>お名前 <span>例:山田 大郎</span></dt>
         <dd class="required">
           <input type="text" name="name_1" value="" />
         </dd>
@@ -40,7 +40,7 @@
       </dl>
 
       <dl>
-        <dt><i></i>性別</dt>
+        <dt><i><span class="optional">必須</span></i>性別</dt>
         <dd>
           <ul>
             <li>
@@ -102,7 +102,7 @@
     </form>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./js/mailform-js.php"></script>
+    <script src="/js/mailform-js.php"></script>
 
     <!-- フリガナ自動入力ライブラリここから -->
     <script src="/mailform-v8.0.1/js/jquery.autoKana.js"></script>
