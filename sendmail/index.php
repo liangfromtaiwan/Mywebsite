@@ -6,7 +6,7 @@
     <title>Send Email</title>
 </head>
 <body>
-    <form action="send.php">
+    <form action="send.php" method="post">
         Email <input type="email" name="email" value="" ><br>
         Subject <input type="text" name="subject" value=""><br>
         Message <input type="text" name="massage" value="" ><br>
