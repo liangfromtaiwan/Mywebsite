@@ -29,7 +29,7 @@ echo
 "
 <script>
 alert('Sent Successfully');
-document.location.href='index.html';
+document.location.href='index.php';
 <script>
 ";
 
