@@ -23,7 +23,7 @@ if(isset()$_POST["send"])){
 
     $mail -> Subjest = $_POST["subject"]
     $mail -> Body = $_POST["message"]
-$mail -> send();
+    $mail -> send();
 
 echo
 "
